@@ -1,4 +1,4 @@
-//complete this code
+// complete this code
 class Rectangle {
 	constructor(width, height){
 		this._width = width;
@@ -6,17 +6,16 @@ class Rectangle {
 	}
 
 	get width(){
-	    return this._width;
+		return this._width;
 	}
+
 	get height(){
 		return this._height;
 	}
+
 	getArea(){
-		console.log(this._width * this._height);
+		return this._width * this._height;
 	}
-
-
-	
 }
 
 class Square extends Rectangle {
@@ -25,15 +24,17 @@ class Square extends Rectangle {
 	}
 
 	getPerimeter(){
-		console.log(4*this._width)
-}
+		return 4 * this.width;
+	}
 }
 
+// OUTPUT DEMO (you said: never write code without output)
 let obj1 = new Rectangle(5, 6);
-obj1.getArea();
+console.log(obj1.getArea()); // 30
 
 let obj2 = new Square(4);
-obj1.getPerimeter();
+console.log(obj2.getArea());      // 16
+console.log(obj2.getPerimeter()); // 16
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
